@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="TestSuite" thread-count="2" parallel="tests" >
+
+
+    <!-- this is for CrossBrowser Testing and Parallel Testing -->
+ <!--   <test name="ChromeTest">
+
+        <parameter name="browser" value="Chrome" />
+
+        <classes>
+
+            <class name="CrossBrowser">
+
+            </class>
+
+        </classes>
+
+    </test>
+
+    <test name="FirefoxTest">
+
+        <parameter name="browser" value="Firefox" />
+
+        <classes>
+
+            <class name="CrossBrowser">
+
+            </class>
+
+        </classes>
+
+    </test>
+-->
+
+
+
+    <!-- this is for Include Exclude -->
+ <!--   <test name="IncludeExcludeTest">
+
+        <classes>
+
+            <class name="IncludeExclude">
+                
+                <methods>
+                    <include name="test"></include>
+                </methods>
+
+            </class>
+
+        </classes>
+
+    </test>  -->
+
+
+
+    <!-- this is for paramters testing -->
+    <test name="Parameters">
+
+        <parameter name="first" value="Param1"></parameter>
+        <parameter name="second" value="Param2"></parameter>
+        <parameter name="third" value="Param3"></parameter>
+        <parameter name="fourth" value="Param4"></parameter>
+        <classes>
+
+            <class name="Params"></class>
+
+        </classes>
+
+    </test>
+
+</suite>
